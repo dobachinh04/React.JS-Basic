@@ -1,13 +1,77 @@
-/* body {
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 30px;
+  padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--title {
+  margin: 0;
+}
+
+.nav--logo_text {
+  color: #61DAFB;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.nav--title {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.nav--icon {
+  margin-right: 7px;
+}
+
+main {
+  padding: 57px 27px;
+  color: white;
+  background-image: url(https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-2048x1822-f7kq7hho.png);
+
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 50%;
+  margin: 0px 400px;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-top: 46px;
+  max-width: 400px
+}
+
+.main--facts>li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts>li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
