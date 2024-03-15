@@ -1,18 +1,18 @@
 import React, { PureComponent } from "react";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src="images/image 12.png" className="card--image" alt="Card" />
+      <img src={props.img} className="card--image" alt="Card" />
       <div className="card--stats">
         <img src="images/Star 1.png" className="card--star" alt="Star" />
-        <span>5.0</span>
-        <span className="gray">(6) • </span>
-        <span className="gray">USA</span>
+        <span>{props.star}</span>
+        <span className="gray">{props.reviews}</span>
+        <span className="gray">{props.place}</span>
       </div>
-      <h2>Life Lessons with Katie Zaferes</h2>
+      <h2>{props.title}</h2>
       <p>
-        <span className="bold">From $136 /</span> person
+        <span className="bold">From ${props.price} /</span> person
       </p>
     </div>
   );
