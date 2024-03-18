@@ -21,7 +21,7 @@ function App() {
         img="images/wedding-photography 1.png"
         star="5.0"
         reviews="(30) • "
-        title="Learn wedding photography        "
+        title="Learn wedding photography"
         place="USA"
         price="125"
       />
