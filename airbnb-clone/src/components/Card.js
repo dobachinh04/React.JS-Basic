@@ -1,14 +1,22 @@
 import React, { PureComponent } from "react";
 
 export default function Card(props) {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE";
+  }
+
   return (
     <div className="card">
-      <img src={props.img} className="card--image" alt="Card" />
+      {badgeText && <div className="card--badge">{badgeText}</div>}
+      <img src={props.coverImg} className="card--image" alt="Card" />
       <div className="card--stats">
         <img src="images/Star 1.png" className="card--star" alt="Star" />
-        <span>{props.star}</span>
-        <span className="gray">{props.reviews}</span>
-        <span className="gray">{props.place}</span>
+        <span>{props.stats.rating}</span>
+        <span className="gray">({props.stats.reviewCount}) • </span>
+        <span className="gray">{props.location}</span>
       </div>
       <h2>{props.title}</h2>
       <p>

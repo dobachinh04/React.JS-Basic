@@ -44,11 +44,38 @@ section {
 .card {
     width: 175px;
     font-size: 0.75rem;
+    flex: 0 0 auto;
+    /* ADD */
+    display: flex;
+    /* ADD */
+    flex-direction: column;
+    /* ADD */
+    position: relative;
+    /* ADD */
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+/* ADD */
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ADD */
+.card--price {
+    margin-top: auto;
 }
 
 .card--image {
     width: 100%;
     border-radius: 9px;
+    margin-bottom: 9px;
 }
 
 .card--stats {
@@ -64,11 +91,22 @@ section {
     color: #918E9B;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
 h2 {
     font-size: 0.75rem;
     font-weight: normal;
+    margin-bottom: 0;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }
